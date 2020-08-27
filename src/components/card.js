@@ -1,18 +1,19 @@
 import React from 'react';
 
-function Card(props) {
-    console.log(props.data)
+
+const Card = ({ copyright, date, explanation, title, url }) =>{
+    console.log(title)
     return (
         <div>
             <div>
-                <h1>{props.data.title}</h1>
+                <h1>Title: {title}</h1>
 
-                <p>{props.data.explanation}</p>
+                <p>{explanation}</p>
             </div>
             <div>
-                <img src={props.data.url}/>
-                <p>{props.data.copyright}</p>
-                <p>{props.data.date}</p>
+                <img src={url}/>
+                <p>{copyright}</p>
+                <p>Date: {date}</p>
             </div>
         </div>
     )
