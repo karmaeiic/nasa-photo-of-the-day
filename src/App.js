@@ -19,7 +19,7 @@ function App() {
   const[details, setDetails]=useState([])
 
   useEffect(() => {
-    axios.get(`https://api.nasa.gov/planetary/apod?api_key=bAcLUqRaRZ8eAxrG9b4TBiz6d1agngrqFTegqQZz`)
+    axios.get(`https://api.nasa.gov/planetary/apod?date=2020-08-27&api_key=QeBD4jB7eCti7UUD1bJ2G6gyzFvpSaAwnFkr2Igk`)
     .then(response => {
       setDetails(response.data)
 
